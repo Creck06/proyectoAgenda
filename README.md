@@ -13,3 +13,9 @@ datos necesarios aquí
 
 http://127.0.0.1:8000/api/loguear   este es login 
 ![image](https://user-images.githubusercontent.com/100977883/224387282-42110ff3-9d63-4153-b98b-d451d3113964.png)
+
+
+
+Cronograma
+
+[CRONOGRAMA DE ACTIVIDADES.pdf](https://github.com/Creck06/ProyectAgenda/files/10944650/CRONOGRAMA.DE.ACTIVIDADES.pdf)
