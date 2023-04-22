@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tipo_usuario', function (Blueprint $table) {
+        Schema::create('tipo_eventos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('Descripcion', 100);
             $table->timestamps();
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipo_usuario');
+        Schema::dropIfExists('tipo_eventos');
     }
 };

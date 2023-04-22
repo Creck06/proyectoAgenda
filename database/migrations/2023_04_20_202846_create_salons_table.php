@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tipo_evento', function (Blueprint $table) {
+        Schema::create('salons', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Descripcion', 100);
+            $table->string('Tamaño', 100);
+            $table->string('Direccion', 100);
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipo_evento');
+        Schema::dropIfExists('salons');
     }
 };
