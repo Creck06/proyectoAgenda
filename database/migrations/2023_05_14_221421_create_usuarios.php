@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->unsignedBigInteger('Id_tipoUs');
             $table->string('Nombre');
             $table->string('Correo');
             $table->string('Numero');
