@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\estado>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Usuario>
  */
-class tipodistribucionFactory extends Factory
+class UsuarioFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,7 @@ class tipodistribucionFactory extends Factory
     public function definition()
     {
         return [
-            'Descripcion'=>$this->faker->lastname()
+            //
         ];
     }
 }

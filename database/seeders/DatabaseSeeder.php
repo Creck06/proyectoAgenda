@@ -10,6 +10,7 @@ use App\Models\tipodistribucion;
 use App\Models\tipoevento;
 use App\Models\tipomesa;
 use App\Models\tiposilla;
+use App\Models\tipousuario;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -31,6 +32,13 @@ class DatabaseSeeder extends Seeder
             ->sequence(
                 ['Descripcion' => 'Activo'],
                 ['Descripcion' => 'Inactivo'],
+            )
+            ->create();
+        tipousuario::factory()
+            ->count(2)
+            ->sequence(
+                ['Descripcion' => 'Administrador'],
+                ['Descripcion' => 'Usuario'],
             )
             ->create();
 
